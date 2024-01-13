@@ -1,0 +1,73 @@
+
+.photo-container {
+    position: relative;
+    width: 100%; 
+    overflow: hidden; 
+    border-radius: 8px; 
+    margin-bottom: 1rem; 
+  }
+  
+
+.photo-img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+    display: block;
+  }
+  
+  .photo-container:hover .photo-img {
+    transform: scale(1.05);
+  }
+  
+  .photo-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    padding: 10px; 
+    background: rgba(0, 0, 0, 0.3); 
+    color: white;
+   
+  }
+  
+  .photo-container:hover .photo-overlay {
+    background: rgba(0, 0, 0, 0.5); 
+  }
+  
+  .photo-title {
+    margin: 0;
+    font-size: 1rem;
+  }
+  
+  .like-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    outline: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+
+  .like-button svg {
+    fill: white; 
+    stroke: red;
+    
+}
+
+.photo-description {
+position: absolute;
+  bottom: 0; 
+  left: 0;
+  width: 100%; 
+  background-color: rgba(0, 0, 0, 0.5); 
+  color: white;
+  padding: 0.5em;
+  box-sizing: border-box;
+}
